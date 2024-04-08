@@ -12,7 +12,7 @@ function mostrarOcultarMenu(){
     }
 }
 
-//oculto el menu una vez que selecciono una opción
+//oculto el menu
 let links = document.querySelectorAll("nav a");
 for(var x = 0; x <links.length;x++){
     links[x].onclick = function(){
@@ -47,7 +47,7 @@ let contadores = [-1,-1,-1,-1,-1,-1];
 let entro = false;
 
 
-//función que aplica las animaciones de la habilidades
+//animaciones de la habilidades
 function efectoHabilidades(){
     var habilidades = document.getElementById("habilidades");
     var distancia_skills = window.innerHeight - habilidades.getBoundingClientRect().top;
@@ -86,7 +86,7 @@ function pintarBarra(id_barra, cantidad, indice, interval){
     }
 }
 
-//detecto el scrolling del mouse para aplicar la animación de la barra
+//scrolling del mouse para aplicar la animación de la barra
 window.onscroll = function(){
     efectoHabilidades();
 }
